@@ -32,7 +32,7 @@ sleep 2
 echo "*************************"
 echo "Remote Config"
 echo "*************************"
-echo "scp -i .vagrant/machines/default/virtualbox/private_key vagrant@${SERVER_IP}:~/tls.crt ~/vault.crt"
+echo "docker cp vault:/opt/vault/tls/tls.crt ~/vault.crt"
 echo "export VAULT_ADDR=https://${SERVER_IP}:8200"
 echo "export VAULT_CACERT=~/vault.crt"
 echo "export VAULT_CA=~/vault.crt"

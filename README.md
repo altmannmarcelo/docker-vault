@@ -17,7 +17,6 @@ I start the container using the following command:
 docker run -d --security-opt seccomp=unconfined --cap-add=NET_ADMIN --rm -p 8200:8200 --name vault altmannmarcelo/vault:latest
 ```
 
-```
 
 ### Building local image
 
@@ -45,6 +44,7 @@ docker run -d --security-opt seccomp=unconfined --cap-add=NET_ADMIN --rm -p 8200
 ```
 
 In order to use vault, you will have to copy the crt certificate:
+
 
 ```
 docker cp vault:/opt/vault/tls/tls.crt ~/vault.crt
